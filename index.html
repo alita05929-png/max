@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MAXSEASON</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      body {
+        opacity: 0;
+        visibility: hidden;
+        background-color: #fefef2;
+        transition: opacity 0.2s ease 0.2s, visibility 0.2s ease 0.2s;
+      }
+
+      .loaded body {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.min.css?_v=20240930164225" />
+    <link rel="icon" href="/assets/logo.jfif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="menu-open-bg"></div>
+      <header class="header">
+        <div class="header__container">
+          <a href="../" class="header__logo"
+            ><img src="img/logo.png" alt="Logo"
+          /></a>
+          <div class="header__right">
+            <div class="header__menu menu">
+              <button type="button" class="menu__icon icon-menu">
+                <span></span>
+              </button>
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".about"
+                      data-goto-header
+                      class="menu__link"
+                      >About</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".how"
+                      data-goto-header
+                      class="menu__link"
+                      >How to buy</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".tokenomics"
+                      data-goto-header
+                      class="menu__link"
+                      >Tokenomics</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__actions" data-da=".menu__body, 767.98">
+              <div class="header__social">
+                <a
+                  href="https://t.me/#"
+                  target="_blank"
+                  class="header__social-item"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33"
+                    height="27"
+                    viewBox="0 0 33 27"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M29.2937 0.273629C29.6853 0.111978 30.1139 0.0562255 30.5349 0.112174C30.956 0.168123 31.354 0.333727 31.6876 0.59175C32.0213 0.849774 32.2783 1.19078 32.4319 1.57928C32.5856 1.96779 32.6303 2.38958 32.5613 2.80076L28.9672 24.1819C28.6186 26.2443 26.3112 27.4271 24.3827 26.3997C22.7694 25.5403 20.3734 24.2161 18.2182 22.8344C17.1406 22.1428 13.8397 19.928 14.2454 18.3521C14.594 17.0046 20.1404 11.941 23.3098 8.93052C24.5538 7.74778 23.9865 7.06548 22.5175 8.15342C18.8695 10.8546 13.0125 14.9624 11.076 16.1187C9.36765 17.1383 8.47705 17.3123 7.41213 17.1383C5.46929 16.8212 3.66749 16.3301 2.19689 15.7317C0.209673 14.9235 0.30634 12.2441 2.1953 11.4639L29.2937 0.273629Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://x.com/#"
+                  target="_blank"
+                  class="header__social-item"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="29"
+                    height="26"
+                    viewBox="0 0 29 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M22.9647 0.951904L27.3205 0.951904L17.8041 11.5276L29.0001 25.9158H20.2341L13.369 17.1883L5.51202 25.9158H1.15388L11.3331 14.6036L0.592834 0.953055L9.58135 0.953055L15.7871 8.93028L22.9647 0.951904ZM21.4366 23.3818H23.8501L8.26989 3.35359H5.68009L21.4366 23.3818Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <a
+                href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon&inputCurrency=BNB"
+                target="_blank"
+                class="header__button"
+                >BUY NOW!</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page__hero hero">
+          <div class="hero__container">
+            <div class="hero__content">
+              <div class="hero__title-img">
+                <img src="img/hero/TitleWrapper.png" alt="MAXSEASON" />
+              </div>
+              <a
+                target="_blank"
+                href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon&inputCurrency=BNB"
+                class="hero__button"
+              >
+                <img src="img/hero/BuyButton.png" alt="BUY NOW" />
+              </a>
+              <div class="hero__social">
+                <a
+                  href="https://x.com/#"
+                  target="_blank"
+                  class="hero__social-item"
+                >
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.1683 0.518066L27.524 0.518066L18.0076 11.0938L29.2036 25.482H20.4376L13.5725 16.7545L5.71557 25.482H1.35743L11.5367 14.1698L0.796387 0.519217L9.7849 0.519217L15.9907 8.49644L23.1683 0.518066ZM21.6402 22.948H24.0536L8.47344 2.91975H5.88365L21.6402 22.948Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <a
+                  href="https://t.me/#"
+                  target="_blank"
+                  class="hero__social-item"
+                >
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="28"
+                      viewBox="0 0 32 28"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M28.626 0.839791C29.0177 0.67814 29.4463 0.622388 29.8673 0.678336C30.2884 0.734285 30.6864 0.899889 31.02 1.15791C31.3537 1.41594 31.6107 1.75695 31.7643 2.14545C31.918 2.53395 31.9627 2.95574 31.8937 3.36692L28.2996 24.748C27.951 26.8105 25.6436 27.9932 23.7151 26.9659C22.1018 26.1064 19.7058 24.7822 17.5506 23.4006C16.473 22.7089 13.1721 20.4942 13.5777 18.9182C13.9264 17.5708 19.4728 12.5072 22.6422 9.49668C23.8862 8.31394 23.3189 7.63164 21.8499 8.71958C18.2019 11.4208 12.3449 15.5285 10.4084 16.6849C8.70005 17.7044 7.80944 17.8785 6.74453 17.7044C4.80169 17.3874 2.99988 16.8962 1.52928 16.2979C-0.457929 15.4897 -0.361263 12.8102 1.5277 12.03L28.626 0.839791Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="hero__image">
+              <img src="img/hero/Image.png" alt="Image" />
+            </div>
+          </div>
+        </section>
+        <div class="page__line line">
+          <div class="line__row">
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+          </div>
+          <div class="line__row">
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+          </div>
+        </div>
+        <section class="page__about about" style="position: relative">
+          <!-- <video src="/file1.mp4" autoplay muted loop style="position: absolute;top:0;left:0;width:100%;height:100%;object-fit: cover;"></video> -->
+          <div class="about__container">
+            <div
+              class="about__content"
+              data-watch-threshold="0.5"
+              data-watch-once
+              data-watch
+            >
+              <h2 class="about__title">
+                <img src="img/about/AboutTitle.png" alt="ABOUT MAX" />
+              </h2>
+              <div class="about__info">
+                <p>
+                  The spirit of Max originates from Giggle Academy, a charitable
+                  initiative founded by Binance CEO CZ, dedicated to providing
+                  free, high-quality education to children worldwide. Through
+                  blockchain technology and a globally distributed community, we
+                  aim to let this love and wisdom transcend borders, reaching
+                  every child who truly needs it.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon&inputCurrency=BNB"
+                  >BUY NOW!</a
+                >
+              </div>
+            </div>
+            <div class="about__image">
+              <img loading="lazy" src="img/about/01-mob.png" alt="Image" />
+            </div>
+          </div>
+        </section>
+        <section class="page__how how">
+          <div class="how__container">
+            <h2
+              class="how__title"
+              data-watch-threshold="0.75"
+              data-watch-once
+              data-watch
+            >
+              <img loading="lazy" src="img/how/Title.png" alt="HOW TO BUY" />
+            </h2>
+            <div class="how__cards">
+              <article
+                class="how__card"
+                data-watch-threshold="0.7"
+                data-watch-once
+                data-watch
+              >
+                <h3>Create a Wallet</h3>
+                <p>
+                  Download the MetaMask extension from the official website and
+                  install it in your browser. Fund it by transferring BNB from
+                  an exchange or another wallet.
+                </p>
+              </article>
+              <article
+                class="how__card"
+                data-watch-threshold="0.7"
+                data-watch-once
+                data-watch
+              >
+                <h3>Connect to DEX</h3>
+                <p>
+                  Connect to a decentralized exchange (DEX) like Pancakeswap.
+                  Open the DEX website and click on "Connect Wallet".Then select
+                  MetaMask.
+                </p>
+              </article>
+              <article
+                class="how__card"
+                data-watch-threshold="0.7"
+                data-watch-once
+                data-watch
+              >
+                <h3>Swap BNB for $MAXSEASON</h3>
+                <p>
+                  To swap BNB for MAX, select BNB in the "from" field and choose
+                  MAX in the "to" field using our contract address. Enter the
+                  amount of tokens you want & press swap.
+                </p>
+              </article>
+              <article
+                class="how__card"
+                data-watch-threshold="0.7"
+                data-watch-once
+                data-watch
+              >
+                <h3>Verify tokens</h3>
+                <p>
+                  Verify your transaction status in MetaMask under the
+                  "Activity" tab or on Bscscan using your Ethereum address. You
+                  import the token to your MetaMask by pasting in the CA.
+                </p>
+              </article>
+            </div>
+            <div class="how__image">
+              <img loading="lazy" src="img/how/01.png" alt="Image" />
+            </div>
+          </div>
+        </section>
+        <div class="page__line line top">
+          <div class="line__row">
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+          </div>
+          <div class="line__row">
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+          </div>
+        </div>
+        <section class="page__tokenomics tokenomics">
+          <div class="tokenomics__container">
+            <h2
+              class="tokenomics__title"
+              data-watch-threshold="0.5"
+              data-watch-once
+              data-watch
+            >
+              <img
+                loading="lazy"
+                src="img/tokenomics/Tittle.png"
+                alt="TOKENOMICS"
+              />
+            </h2>
+            <div class="tokenomics__body">
+              <div class="tokenomics__body-left">
+                <div
+                  class="tokenomics__item item1"
+                  data-watch-threshold="0.75"
+                  data-watch-once
+                  data-watch
+                >
+                  <img src="img/tokenomics/Supply.png" alt="Image" />
+                </div>
+              </div>
+              <div class="tokenomics__body-right">
+                <div
+                  class="tokenomics__item item2"
+                  data-watch-threshold="0.75"
+                  data-watch-once
+                  data-watch
+                >
+                  <img
+                    src="img/tokenomics/LP.png"
+                    alt="Image"
+                    style="opacity: 0"
+                  />
+                </div>
+                <div
+                  class="tokenomics__item item3"
+                  data-watch-threshold="0.75"
+                  data-watch-once
+                  data-watch
+                >
+                  <img src="img/tokenomics/Tax.png" alt="Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tokenomics__bottom">
+            <img src="img/tokenomics/bottom.png" alt="Image" />
+            <img src="img/tokenomics/bottom-mob.png" alt="Image" />
+          </div>
+        </section>
+        <div class="page__line line yellow">
+          <div class="line__row">
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+          </div>
+          <div class="line__row">
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+            <span>MAXSEASON</span>
+            <img src="img/giggle.png" alt="Icon" />
+          </div>
+        </div>
+        <section class="page__join join">
+          <div class="join__top">
+            <img loading="lazy" src="img/join/Clouds.png" alt="Image" />
+          </div>
+          <div class="join__container">
+            <div class="join__body">
+              <div class="join__image">
+                <img loading="lazy" src="img/join/TV.png" alt="Image" />
+                <img loading="lazy" src="img/join/TV-mob.png" alt="Image" />
+              </div>
+              <div class="join__actions">
+                <a
+                  href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon&inputCurrency=BNB"
+                  target="_blank "
+                  class="join__button"
+                >
+                  <span>BUY NOW!</span>
+                </a>
+                <div class="join__social">
+                  <a
+                    href="https://x.com/#"
+                    target="_blank"
+                    class="join__social-item"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_546_564)">
+                        <path
+                          d="M19.401 1.65308H23.081L15.041 10.8431L24.5 23.3461H17.094L11.294 15.7621L4.656 23.3461H0.974L9.574 13.5161L0.5 1.65408H8.094L13.337 8.58608L19.401 1.65308ZM18.11 21.1441H20.149L6.986 3.74008H4.798L18.11 21.1441Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_546_564">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(0.5 0.5)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://t.me/#"
+                    target="_blank"
+                    class="join__social-item"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M21.2212 3.12314C21.4917 3.01411 21.7877 2.9765 22.0786 3.01424C22.3694 3.05198 22.6443 3.16368 22.8748 3.33772C23.1052 3.51177 23.2827 3.74178 23.3889 4.00384C23.495 4.26589 23.5259 4.5504 23.4782 4.82775L20.9957 19.2498C20.7549 20.6409 19.1611 21.4387 17.829 20.7458C16.7147 20.166 15.0597 19.2728 13.5711 18.3409C12.8267 17.8744 10.5467 16.3805 10.8269 15.3175C11.0677 14.4085 14.8988 10.993 17.088 8.96241C17.9472 8.16462 17.5554 7.7044 16.5407 8.43824C14.0209 10.2603 9.97532 13.031 8.63772 13.811C7.45775 14.4987 6.84259 14.6161 6.10702 14.4987C4.76505 14.2848 3.5205 13.9536 2.50471 13.55C1.13209 13.0048 1.19886 11.1975 2.50362 10.6712L21.2212 3.12314Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://dexscreener.com/bsc/0xcomingsoon"
+                    target="_blank"
+                    class="join__social-item"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="29"
+                      viewBox="0 0 23 29"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.8562 10.5978C14.6939 10.182 15.7595 9.5697 16.8265 8.73082C17.0515 9.19611 17.0763 9.60204 16.9602 9.92975C16.878 10.1607 16.7231 10.3617 16.5198 10.5215C16.2995 10.6942 16.0241 10.8202 15.7199 10.8881C15.1426 11.0176 14.4685 10.9422 13.8562 10.5978ZM14.0015 14.8588L15.1102 15.4966C12.8464 16.7601 12.2309 19.1063 11.4997 21.3913C10.7688 19.1063 10.1532 16.7599 7.88949 15.4966L8.99815 14.8588C9.21817 14.776 9.3597 14.5617 9.34853 14.3276C9.24683 12.1875 9.82717 11.241 10.6101 10.647C10.8907 10.4342 11.1972 10.3274 11.4997 10.3274C11.8021 10.3274 12.1087 10.4342 12.3893 10.647C13.1719 11.2413 13.7523 12.1875 13.6509 14.3276C13.6397 14.5617 13.7817 14.776 14.0015 14.8588ZM11.5 0.88501C12.7815 0.919345 14.0664 1.16701 15.1814 1.64896C15.9537 1.98322 16.6739 2.42453 17.3265 2.95242C17.6211 3.19075 17.8637 3.42099 18.131 3.68608C18.8518 3.71082 19.9051 2.91355 20.3942 2.16752C19.5524 4.91507 15.712 8.15947 13.0533 9.40108C13.0523 9.40061 13.0515 9.40006 13.0508 9.39958C12.5736 9.03675 12.0369 8.85526 11.5002 8.85526C10.9635 8.85526 10.4268 9.03675 9.94963 9.39958C9.94888 9.40006 9.94813 9.40081 9.94711 9.40108C7.28785 8.15947 3.44767 4.91482 2.60596 2.16752C3.09501 2.91355 4.14817 3.71107 4.86894 3.68608C5.13616 3.42125 5.37879 3.19075 5.67339 2.95242C6.32571 2.42453 7.04625 1.98322 7.81849 1.64896C8.93375 1.16701 10.2184 0.919345 11.5 0.88501ZM9.1437 10.5978C8.30624 10.182 7.24047 9.5697 6.17334 8.73082C5.94846 9.19611 5.92362 9.60204 6.03948 9.92975C6.12162 10.1607 6.27653 10.3617 6.47985 10.5215C6.70042 10.6942 6.97572 10.8202 7.28002 10.8881C7.85729 11.0176 8.53164 10.9422 9.1437 10.5978Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.9953 7.70305C18.5827 7.11278 19.1005 6.45941 19.5165 5.87622L19.728 6.27233C20.4084 7.62806 20.7621 8.9785 20.7621 10.4981L20.7606 12.9096L20.7733 14.1595C20.8225 17.2285 21.4895 20.3332 23 23.1747L19.8395 20.637L17.6034 24.2504L15.2542 22.0482L11.5 28.1149L7.74574 22.0485L5.39658 24.2507L3.16047 20.6372L0 23.175C1.51052 20.3335 2.17729 17.2285 2.22673 14.1598L2.2394 12.9098L2.23789 10.4983C2.23789 8.9785 2.5913 7.62831 3.27202 6.27259L3.48321 5.87647C3.8995 6.45941 4.41695 7.11278 5.00437 7.70332L4.82082 8.08277C4.46436 8.81968 4.34647 9.64372 4.62408 10.4276C4.80307 10.9323 5.12962 11.3653 5.55073 11.6958C5.95966 12.0166 6.44365 12.233 6.95022 12.3466C7.28031 12.4206 7.61647 12.4511 7.95064 12.4408C7.87277 12.8808 7.83852 13.337 7.83655 13.8021L4.8553 15.5167L7.1558 16.8008C7.33961 16.9035 7.51483 17.0209 7.67909 17.1525C9.57572 18.8482 10.7161 23.8649 11.4997 26.3153C12.2834 23.8649 13.4238 18.8482 15.3204 17.1525C15.4847 17.0212 15.6599 16.9035 15.8437 16.8008L18.1442 15.5167L15.163 13.8021C15.1607 13.337 15.1267 12.8808 15.0489 12.4408C15.383 12.4511 15.7192 12.4206 16.0493 12.3466C16.5558 12.233 17.0398 12.0166 17.4488 11.6958C17.8699 11.3653 18.1964 10.9323 18.3754 10.4276C18.653 9.644 18.5351 8.81995 18.1787 8.08277L17.9953 7.70305Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__container">
+            <div class="footer__top-body">
+              <a
+                href="#"
+                data-goto=".hero"
+                data-goto-header
+                class="footer__top-logo"
+              >
+                <img src="img/logo-footer.png" alt="Image" />
+              </a>
+              <div class="footer__top-right">
+                <div class="footer__top-menu">
+                  <a
+                    href="#"
+                    data-goto=".about"
+                    data-goto-header
+                    class="footer__top-menu-item"
+                    >About</a
+                  >
+                  <a
+                    href="#"
+                    data-goto=".how"
+                    data-goto-header
+                    class="footer__top-menu-item"
+                    >How to buy</a
+                  >
+                  <a
+                    href="#"
+                    data-goto=".tokenomics"
+                    data-goto-header
+                    class="footer__top-menu-item"
+                    >Tokenomics</a
+                  >
+                </div>
+                <div class="footer__top-social">
+                  <a
+                    href="https://t.me/#"
+                    target="_blank "
+                    class="footer__top-socail-item"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="27"
+                      viewBox="0 0 32 27"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M28.5513 0.414498C28.943 0.252847 29.3716 0.197095 29.7926 0.253043C30.2137 0.308992 30.6117 0.474596 30.9453 0.732619C31.279 0.990643 31.536 1.33165 31.6896 1.72015C31.8433 2.10866 31.888 2.53045 31.819 2.94163L28.2249 24.3228C27.8763 26.3852 25.5689 27.5679 23.6404 26.5406C22.0271 25.6811 19.6311 24.3569 17.4759 22.9753C16.3983 22.2836 13.0974 20.0689 13.503 18.493C13.8517 17.1455 19.3981 12.0819 22.5675 9.07139C23.8115 7.88864 23.2442 7.20635 21.7752 8.29429C18.1272 10.9955 12.2701 15.1032 10.3336 16.2596C8.62534 17.2791 7.73474 17.4532 6.66982 17.2791C4.72698 16.9621 2.92518 16.4709 1.45458 15.8726C-0.532636 15.0644 -0.43597 12.3849 1.45299 11.6047L28.5513 0.414498Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://x.com/#"
+                    target="_blank "
+                    class="footer__top-socail-item"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.2224 0.0927734L27.5782 0.0927734L18.0617 10.6685L29.2577 25.0567H20.4917L13.6267 16.3292L5.76971 25.0567H1.41157L11.5908 13.7445L0.850525 0.0939243L9.83904 0.0939243L16.0448 8.07115L23.2224 0.0927734ZM21.6943 22.5227H24.1078L8.52758 2.49446H5.93778L21.6943 22.5227Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://dexscreener.com/bsc/0xcomingsoon"
+                    target="_blank "
+                    class="footer__top-socail-item"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="29"
+                      height="34"
+                      viewBox="0 0 29 34"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.1262 11.8242C18.146 11.318 19.4432 10.5727 20.7423 9.55143C21.0161 10.1179 21.0463 10.612 20.9049 11.011C20.8049 11.2922 20.6164 11.5368 20.3688 11.7314C20.1007 11.9416 19.7654 12.095 19.3951 12.1777C18.6923 12.3353 17.8716 12.2435 17.1262 11.8242ZM17.3031 17.0116L18.6528 17.788C15.8969 19.3262 15.1475 22.1824 14.2574 24.9642C13.3676 22.1824 12.6182 19.326 9.86237 17.788L11.212 17.0116C11.4799 16.9108 11.6522 16.6499 11.6386 16.365C11.5148 13.7596 12.2213 12.6073 13.1744 11.8842C13.516 11.6251 13.8892 11.4951 14.2574 11.4951C14.6256 11.4951 14.9988 11.6251 15.3404 11.8842C16.2932 12.6076 16.9997 13.7596 16.8762 16.365C16.8626 16.6499 17.0355 16.9108 17.3031 17.0116ZM14.2577 0C15.8179 0.0417991 17.3821 0.343305 18.7395 0.930032C19.6797 1.33696 20.5565 1.87419 21.3509 2.51685C21.7096 2.80699 22.0049 3.08729 22.3303 3.41001C23.2078 3.44012 24.4901 2.46953 25.0855 1.56132C24.0608 4.90617 19.3855 8.85587 16.1487 10.3674C16.1475 10.3668 16.1466 10.3662 16.1457 10.3656C15.5648 9.92386 14.9114 9.70292 14.258 9.70292C13.6046 9.70292 12.9512 9.92386 12.3704 10.3656C12.3695 10.3662 12.3685 10.3671 12.3673 10.3674C9.12993 8.85587 4.45494 4.90586 3.43024 1.56132C4.02561 2.46953 5.30771 3.44043 6.18518 3.41001C6.51049 3.0876 6.80586 2.80699 7.1645 2.51685C7.95864 1.87419 8.83581 1.33696 9.77593 0.930032C11.1337 0.343305 12.6976 0.0417991 14.2577 0ZM11.3892 11.8242C10.3697 11.318 9.07225 10.5727 7.77314 9.55143C7.49938 10.1179 7.46913 10.612 7.61018 11.011C7.71018 11.2922 7.89876 11.5368 8.14629 11.7314C8.41481 11.9416 8.74996 12.095 9.1204 12.1777C9.82317 12.3353 10.6441 12.2435 11.3892 11.8242Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.1651 8.30039C22.8803 7.5818 23.5105 6.78639 24.017 6.07642L24.2744 6.55864C25.1028 8.20909 25.5334 9.85311 25.5334 11.703L25.5315 14.6388L25.547 16.1604C25.6069 19.8966 26.4189 23.6763 28.2578 27.1355L24.4103 24.046L21.688 28.445L18.8281 25.7641L14.2578 33.1496L9.68736 25.7644L6.82751 28.4454L4.10528 24.0464L0.257751 27.1358C2.09664 23.6766 2.90837 19.8966 2.96855 16.1608L2.98399 14.6391L2.98214 11.7033C2.98214 9.85311 3.41238 8.2094 4.24109 6.55895L4.49819 6.07672C5.00497 6.78639 5.63491 7.5818 6.35004 8.30072L6.12658 8.76266C5.69263 9.65976 5.54911 10.6629 5.88707 11.6172C6.10497 12.2317 6.50251 12.7587 7.01516 13.1611C7.513 13.5517 8.1022 13.8151 8.71889 13.9534C9.12075 14.0434 9.52998 14.0807 9.93681 14.0681C9.842 14.6038 9.80031 15.1591 9.79791 15.7253L6.16855 17.8127L8.96917 19.3759C9.19293 19.501 9.40625 19.6439 9.60622 19.8041C11.9152 21.8685 13.3035 27.9757 14.2574 30.9589C15.2115 27.9757 16.5998 21.8685 18.9087 19.8041C19.1087 19.6442 19.322 19.501 19.5457 19.3759L22.3464 17.8127L18.717 15.7253C18.7143 15.1591 18.6728 14.6038 18.5781 14.0681C18.9849 14.0807 19.3942 14.0434 19.796 13.9534C20.4127 13.8151 21.0019 13.5517 21.4997 13.1611C22.0124 12.7587 22.4099 12.2317 22.6278 11.6172C22.9658 10.6633 22.8222 9.66009 22.3883 8.76266L22.1651 8.30039Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://dextools.io/app/en/bnb/pair-explorer/0xcomingsoon"
+                    target="_blank "
+                    class="footer__top-socail-item"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="33"
+                      viewBox="0 0 32 33"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.8319 3.80958C11.2208 4.67304 9.90262 5.40378 9.90296 5.43353C9.90371 5.51019 13.7697 7.52471 13.9069 7.51977C13.9693 7.51768 14.4221 7.30314 14.9131 7.04333L15.8059 6.57087L16.781 7.08656L17.756 7.60234L19.3528 6.86415C21.7588 5.75177 22.0087 5.62986 21.9695 5.58897C21.9176 5.53459 21.0547 5.05768 18.7133 3.78941C17.5818 3.17645 16.4835 2.57552 16.2727 2.45384C16.0617 2.33205 15.8605 2.23422 15.8253 2.23611C15.7901 2.238 14.4431 2.94613 12.8319 3.80958ZM5.76542 7.57438L4.08827 8.46579V12.3777C4.08827 14.5293 4.11025 16.2896 4.13733 16.2896C4.16441 16.2896 4.98944 15.9216 5.97097 15.4717L7.75563 14.6538V10.5305L8.6278 11.0193C9.2998 11.3957 9.97234 11.7712 10.6451 12.1461L11.7903 12.784L12.2998 12.5468C12.6194 12.3979 12.9384 12.2476 13.2567 12.0957C13.5026 11.9778 14.1064 11.698 14.5985 11.4738C15.0904 11.2495 15.5459 11.0238 15.6104 10.9725C15.6962 10.9042 14.6502 10.3095 11.7415 8.77271C9.54912 7.61431 7.68495 6.67016 7.59896 6.67473C7.51297 6.6793 6.68792 7.08407 5.76542 7.57438ZM22.2716 7.82468C21.1294 8.35518 20.194 8.81048 20.1929 8.83643C20.1919 8.86238 20.8144 9.24325 21.5764 9.68269C22.3384 10.1223 22.9618 10.5054 22.9618 10.5342C22.9618 10.5631 22.2876 10.8992 21.4636 11.2814C20.6394 11.6635 18.5565 12.6314 16.8346 13.4322L11.0651 16.1153C9.61381 16.7904 8.30562 17.3987 8.15801 17.4675C5.19359 18.8482 4.37884 19.2313 4.26697 19.297C4.15444 19.3633 4.12899 19.7479 4.10895 21.6784L4.08502 23.9811L5.58488 24.7674L7.08465 25.5536L9.16431 24.5879C10.3082 24.0569 11.244 23.5946 11.244 23.5605C11.244 23.5264 11.0326 23.3849 10.7745 23.2455C10.5161 23.1061 9.98276 22.7977 9.58916 22.5598C9.19563 22.3219 8.80325 22.1037 8.71706 22.0747C8.63093 22.0458 8.56175 21.9954 8.56312 21.9624C8.56455 21.9295 9.48036 21.4821 10.5981 20.9678C12.7691 19.9691 14.4306 19.1994 17.9975 17.5398C19.5924 16.7978 21.1877 16.0566 22.7829 15.3154C24.185 14.6642 25.8152 13.9038 26.4056 13.6255L27.4789 13.1195L27.5028 10.7907L27.5267 8.46189L26.0055 7.65862C25.1688 7.21681 24.4537 6.85647 24.4162 6.8578C24.3787 6.85903 23.4138 7.2941 22.2716 7.82468ZM27.0715 16.2262C26.8473 16.3388 26.4046 16.5498 26.0876 16.6949C25.7706 16.84 25.1691 17.1192 24.7508 17.3155L23.9906 17.6723L23.9732 19.7168C23.9637 20.8412 23.9235 21.7562 23.8838 21.7504C23.7938 21.7365 22.3688 20.9846 20.9364 20.1949C19.9026 19.625 19.8376 19.6023 19.5947 19.7262C19.4542 19.7978 18.6147 20.1851 17.7292 20.587C16.8436 20.989 16.0903 21.3441 16.0547 21.3762C16.0195 21.4083 17.8017 22.4021 20.0154 23.5849L24.0403 25.7354L25.7596 24.8202C26.7053 24.317 27.5093 23.8579 27.5463 23.8002C27.6297 23.6704 27.6225 16.0035 27.539 16.0138C27.506 16.0179 27.2956 16.1136 27.0715 16.2262ZM17.5503 25.2252C17.252 25.3571 16.9539 25.4893 16.6558 25.6215C15.7557 26.0222 15.932 26.0355 14.8611 25.4871C14.1479 25.1218 13.8404 25.009 13.707 25.0638C13.6069 25.1047 12.7454 25.5036 11.7925 25.95C10.8395 26.3964 10.0268 26.7615 9.98643 26.7615C9.58657 26.7615 10.2514 27.1701 12.8161 28.5012L15.8241 30.0622L17.0897 29.4194C17.7857 29.0658 19.1897 28.3577 20.2097 27.846C21.2295 27.3341 22.0515 26.902 22.0361 26.8858C22.0206 26.8695 21.166 26.4179 20.1369 25.8824L18.2658 24.9088L17.5503 25.2252Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://coinmarketcap.com"
+                    target="_blank "
+                    class="footer__top-socail-item"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="31"
+                      height="33"
+                      viewBox="0 0 31 33"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_557_332)">
+                        <mask
+                          id="mask0_557_332"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="31"
+                          height="33"
+                        >
+                          <path
+                            d="M30.8966 0.149414H0V32.1494H30.8966V0.149414Z"
+                            fill="white"
+                          />
+                        </mask>
+                        <g mask="url(#mask0_557_332)">
+                          <path
+                            d="M25.643 18.9533C25.1758 19.2332 24.6306 19.2841 24.2153 19.0551C23.6961 18.7497 23.3846 18.0627 23.3846 17.1213V14.2462C23.3846 12.8722 22.8394 11.8799 21.9049 11.6254C20.3213 11.1674 19.1272 13.0757 18.6859 13.7882L15.8824 18.19V12.7704C15.8564 11.5237 15.441 10.7858 14.6623 10.5568C14.1431 10.4041 13.3643 10.4805 12.6115 11.6L6.35523 21.4213C5.52453 19.8693 5.08322 18.1391 5.08322 16.3834C5.08322 10.455 9.93764 5.64612 15.8824 5.64612C21.827 5.64612 26.6814 10.455 26.6814 16.3834V16.4089V16.4343C26.7333 17.5793 26.3699 18.4953 25.643 18.9533ZM29.0697 16.3834V16.358V16.3326C29.0437 9.13194 23.125 3.25439 15.8824 3.25439C8.61371 3.25439 2.69495 9.13194 2.69495 16.3834C2.69495 23.6095 8.61371 29.5125 15.8824 29.5125C19.2311 29.5125 22.3981 28.2657 24.8383 26.0012C25.3315 25.5433 25.3575 24.8054 24.8902 24.3219C24.4489 23.8385 23.6961 23.8131 23.2029 24.2456C23.2029 24.2456 23.2028 24.2456 23.1769 24.2711C21.204 26.103 18.5561 27.1462 15.8304 27.1462C12.6374 27.1462 9.78188 25.7722 7.80896 23.5841L13.4422 14.7296V18.8261C13.4422 20.7852 14.221 21.4213 14.8699 21.5994C15.5189 21.7776 16.5053 21.6503 17.5696 19.9965L20.6588 15.0858C20.7627 14.9331 20.8405 14.7805 20.9444 14.6787V17.1722C20.9444 19.0042 21.6972 20.4799 22.9952 21.1923C24.1634 21.8539 25.643 21.7776 26.8631 21.0397C28.3688 20.0728 29.1735 18.3935 29.0697 16.3834Z"
+                            fill="white"
+                          />
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_557_332">
+                          <rect
+                            width="30.8966"
+                            height="32"
+                            fill="white"
+                            transform="translate(0 0.149414)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__container">
+            <div class="footer__bottom-body">
+              <span>2025 © ALL RIGHTS RESERVED</span>
+              <!-- <a target="_blank" href="https://t.me/osnovoco">
+                <span>Designed by</span>
+                <img src="img/osnovo.svg" alt="Osnovo" />
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.min.js?_v=20240930164225"></script>
+    <script>
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+      document.onkeydown = function (e) {
+        if (
+          e.keyCode == 123 ||
+          (e.ctrlKey && e.key == "u") ||
+          (e.ctrlKey && e.shiftKey && e.key == "I")
+        ) {
+          return false;
+        }
+      };
+    </script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollSmoother.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/SplitText.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+      // create the smooth scroller FIRST!
+      let smoother = ScrollSmoother.create({
+        smooth: 2,
+        effects: true,
+        normalizeScroll: true,
+      });
+    </script>
+    <script>
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+      document.onkeydown = function (e) {
+        if (
+          e.keyCode == 123 ||
+          (e.ctrlKey && e.key == "u") ||
+          (e.ctrlKey && e.shiftKey && e.key == "I")
+        ) {
+          return false;
+        }
+      };
+    </script>
+  </body>
+</html>
